@@ -33,6 +33,8 @@ struct AddCourse: View {
     
     func saveCourse() {
         
+        //Dismiss view
+        showing = false
         
     }
     
