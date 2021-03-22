@@ -12,6 +12,9 @@ struct AddCourse: View {
     //Details of new course
     @State private var courseName = ""
     
+    //Whether to show this view
+    @Binding var showing: Bool
+    
     var body: some View {
         NavigationView{
             Form {
@@ -37,6 +40,6 @@ struct AddCourse: View {
 
 struct AddCourse_Previews: PreviewProvider {
     static var previews: some View {
-        AddCourse()
+        AddCourse(showing: .constant(true))
     }
 }
