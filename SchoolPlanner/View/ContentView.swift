@@ -28,7 +28,7 @@ struct ContentView: View {
             }
         }
         .sheet(isPresented: $showingAddCourse) {
-            AddCourse(showing: $showingAddCourse)
+            AddCourse(store: store, showing: $showingAddCourse)
         }
     }
 }

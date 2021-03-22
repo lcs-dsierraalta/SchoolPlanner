@@ -9,6 +9,9 @@ import SwiftUI
 
 struct AddCourse: View {
     
+    //Get a reference to the store of courses (CourseStore)
+    @ObservedObject var store: CourseStore
+    
     //Details of new course
     @State private var courseName = ""
     
@@ -33,6 +36,9 @@ struct AddCourse: View {
     
     func saveCourse() {
         
+        //Add the course to the list of courses
+        store.courses.append(Course(courseName: courseName))
+        
         //Dismiss view
         showing = false
         
@@ -42,6 +48,6 @@ struct AddCourse: View {
 
 struct AddCourse_Previews: PreviewProvider {
     static var previews: some View {
-        AddCourse(showing: .constant(true))
+        AddCourse(store: testCourse, showing: .constant(true))
     }
 }
