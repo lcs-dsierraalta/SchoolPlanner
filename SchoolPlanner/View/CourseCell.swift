@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct CourseCell: View {
+    
+    var course: Course
+    
     var body: some View {
-        Text("Hello, World!")
+        Text(course.courseName)
     }
 }
 
 struct CourseCell_Previews: PreviewProvider {
     static var previews: some View {
-        CourseCell()
+        CourseCell(course: sampleCourse[0])
     }
 }

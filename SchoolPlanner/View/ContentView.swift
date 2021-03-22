@@ -8,14 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var store: CourseStore
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        List(store.courses) { course in
+            CourseCell(course: course)
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(store: testCourse)
     }
 }
