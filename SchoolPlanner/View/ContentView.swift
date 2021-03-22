@@ -15,11 +15,14 @@ struct ContentView: View {
         List(store.courses) { course in
             CourseCell(course: course)
         }
+        .navigationTitle("Courses")
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(store: testCourse)
+        NavigationView {
+            ContentView(store: testCourse)
+        }
     }
 }
