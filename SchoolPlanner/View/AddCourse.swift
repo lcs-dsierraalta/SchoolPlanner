@@ -8,9 +8,31 @@
 import SwiftUI
 
 struct AddCourse: View {
+    
+    //Details of new course
+    @State private var courseName = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            Form {
+                TextField("Course Name", text: $courseName)
+            }
+            .navigationTitle("New Course")
+            .toolbar {
+                ToolbarItem(placement: .primaryAction) {
+                    Button("Save") {
+                        saveCourse()
+                    }
+                }
+            }
+        }
     }
+    
+    func saveCourse() {
+        
+        
+    }
+    
 }
 
 struct AddCourse_Previews: PreviewProvider {
