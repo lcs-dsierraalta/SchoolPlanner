@@ -11,6 +11,11 @@
 		397ADF9026012E80001ADBB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397ADF8F26012E80001ADBB1 /* ContentView.swift */; };
 		397ADF9226012E86001ADBB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 397ADF9126012E86001ADBB1 /* Assets.xcassets */; };
 		397ADF9526012E86001ADBB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 397ADF9426012E86001ADBB1 /* Preview Assets.xcassets */; };
+		39DDE1A62608E8DE00208D82 /* CourseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DDE1A52608E8DE00208D82 /* CourseDetailView.swift */; };
+		39DDE1A92608E9D100208D82 /* AddCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DDE1A82608E9D100208D82 /* AddCourse.swift */; };
+		39DDE1AC2608EB4C00208D82 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DDE1AB2608EB4C00208D82 /* Course.swift */; };
+		39DDE1AF2608F04500208D82 /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DDE1AE2608F04500208D82 /* CourseCell.swift */; };
+		39DDE1B22608F29F00208D82 /* CourseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DDE1B12608F29F00208D82 /* CourseStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		397ADF9126012E86001ADBB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		397ADF9426012E86001ADBB1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		397ADF9626012E86001ADBB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39DDE1A52608E8DE00208D82 /* CourseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailView.swift; sourceTree = "<group>"; };
+		39DDE1A82608E9D100208D82 /* AddCourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCourse.swift; sourceTree = "<group>"; };
+		39DDE1AB2608EB4C00208D82 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		39DDE1AE2608F04500208D82 /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
+		39DDE1B12608F29F00208D82 /* CourseStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +43,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3931F40226050867002DB3B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				397ADF8F26012E80001ADBB1 /* ContentView.swift */,
+				39DDE1A52608E8DE00208D82 /* CourseDetailView.swift */,
+				39DDE1A82608E9D100208D82 /* AddCourse.swift */,
+				39DDE1AE2608F04500208D82 /* CourseCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3931F40426050884002DB3B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				39DDE1AB2608EB4C00208D82 /* Course.swift */,
+				39DDE1B12608F29F00208D82 /* CourseStore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		397ADF8126012E80001ADBB1 = {
 			isa = PBXGroup;
 			children = (
@@ -53,7 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				397ADF8D26012E80001ADBB1 /* SchoolPlannerApp.swift */,
-				397ADF8F26012E80001ADBB1 /* ContentView.swift */,
+				3931F40426050884002DB3B7 /* Model */,
+				3931F40226050867002DB3B7 /* View */,
 				397ADF9126012E86001ADBB1 /* Assets.xcassets */,
 				397ADF9626012E86001ADBB1 /* Info.plist */,
 				397ADF9326012E86001ADBB1 /* Preview Content */,
@@ -138,7 +169,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39DDE1AF2608F04500208D82 /* CourseCell.swift in Sources */,
+				39DDE1A92608E9D100208D82 /* AddCourse.swift in Sources */,
 				397ADF9026012E80001ADBB1 /* ContentView.swift in Sources */,
+				39DDE1B22608F29F00208D82 /* CourseStore.swift in Sources */,
+				39DDE1AC2608EB4C00208D82 /* Course.swift in Sources */,
+				39DDE1A62608E8DE00208D82 /* CourseDetailView.swift in Sources */,
 				397ADF8E26012E80001ADBB1 /* SchoolPlannerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +304,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"SchoolPlanner/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "SchoolPlanner/Preview\\ Content SchoolPlanner/View/ContentView.swift";
 				DEVELOPMENT_TEAM = U7N3AQ6LLP;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SchoolPlanner/Info.plist;
@@ -290,7 +326,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"SchoolPlanner/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "SchoolPlanner/Preview\\ Content SchoolPlanner/View/ContentView.swift";
 				DEVELOPMENT_TEAM = U7N3AQ6LLP;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SchoolPlanner/Info.plist;
