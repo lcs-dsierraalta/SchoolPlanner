@@ -9,13 +9,27 @@ import SwiftUI
 
 struct ContentView: View {
     
+    //Stores all courses that are being tracked
     @ObservedObject var store: CourseStore
+    
+    //Controls whether the add course view is showing
+    @State private var showingAddCourse = false
     
     var body: some View {
         List(store.courses) { course in
             CourseCell(course: course)
         }
         .navigationTitle("Courses")
+        .toolbar {
+            ToolbarItem(placement: .primaryAction) {
+                Button("Add") {
+                    showingAddCourse = true
+                }
+            }
+        }
+        .sheet(isPresented: $showingAddCourse) {
+            AddCourse(showing: $showingAddCourse)
+        }
     }
 }
 
