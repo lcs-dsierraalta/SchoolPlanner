@@ -8,13 +8,25 @@
 import SwiftUI
 
 struct CourseDetailView: View {
+    
+   @ObservedObject var storeA: AssignmentStore
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(storeA.assignments) { assignment in
+            HStack {
+                Image(systemName: assignment.completed ? "checkmark.circle.fill" : "circle")
+                    .onTapGesture {
+                        assignment.completed.toggle()
+                    }
+                
+                Text(assignment.assignmentName)
+            }
+        }
     }
 }
 
 struct CourseDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        CourseDetailView()
+        CourseDetailView(storeA: testStore)
     }
 }

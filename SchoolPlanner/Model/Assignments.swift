@@ -7,15 +7,23 @@
 
 import Foundation
 
-struct Assignment: Identifiable {
-    
+class Assignment: Identifiable, ObservableObject {
+        
     var id = UUID()
     var assignmentName: String
     var description: String
     var completed: Bool
-    var priority: AssignmentPriority
+    @Published var priority: AssignmentPriority
     var dueDate = Date()
     
+    internal init(id: UUID = UUID(), assignmentName: String, description: String, completed: Bool, priority: AssignmentPriority, dueDate: Date = Date()) {
+        self.id = id
+        self.assignmentName = assignmentName
+        self.description = description
+        self.completed = completed
+        self.priority = priority
+        self.dueDate = dueDate
+    }
 }
 
 let testData = [

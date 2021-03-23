@@ -11,11 +11,13 @@ import SwiftUI
 struct SchoolPlannerApp: App {
     
     @StateObject private var store = CourseStore(courses: sampleCourse)
+    @StateObject private var storeA = AssignmentStore(assignments: testData)
     
     var body: some Scene {
         WindowGroup {
             NavigationView {
                 ContentView(store: store)
+                CourseDetailView(storeA: storeA)
             }
         }
     }
