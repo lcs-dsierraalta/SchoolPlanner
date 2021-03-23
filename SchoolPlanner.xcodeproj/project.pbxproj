@@ -17,6 +17,7 @@
 		39DDE1AF2608F04500208D82 /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DDE1AE2608F04500208D82 /* CourseCell.swift */; };
 		39DDE1B22608F29F00208D82 /* CourseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DDE1B12608F29F00208D82 /* CourseStore.swift */; };
 		39DDE1B82609671F00208D82 /* Assignments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DDE1B72609671F00208D82 /* Assignments.swift */; };
+		39DDE1BB26096AA700208D82 /* AssignmentPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DDE1BA26096AA700208D82 /* AssignmentPriority.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		39DDE1AE2608F04500208D82 /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
 		39DDE1B12608F29F00208D82 /* CourseStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseStore.swift; sourceTree = "<group>"; };
 		39DDE1B72609671F00208D82 /* Assignments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignments.swift; sourceTree = "<group>"; };
+		39DDE1BA26096AA700208D82 /* AssignmentPriority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentPriority.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				39DDE1AB2608EB4C00208D82 /* Course.swift */,
 				39DDE1B12608F29F00208D82 /* CourseStore.swift */,
 				39DDE1B72609671F00208D82 /* Assignments.swift */,
+				39DDE1BA26096AA700208D82 /* AssignmentPriority.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				39DDE1B22608F29F00208D82 /* CourseStore.swift in Sources */,
 				39DDE1AC2608EB4C00208D82 /* Course.swift in Sources */,
 				39DDE1A62608E8DE00208D82 /* CourseDetailView.swift in Sources */,
+				39DDE1BB26096AA700208D82 /* AssignmentPriority.swift in Sources */,
 				397ADF8E26012E80001ADBB1 /* SchoolPlannerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
