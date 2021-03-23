@@ -19,6 +19,7 @@
 		39DDE1B82609671F00208D82 /* Assignments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DDE1B72609671F00208D82 /* Assignments.swift */; };
 		39DDE1BB26096AA700208D82 /* AssignmentPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DDE1BA26096AA700208D82 /* AssignmentPriority.swift */; };
 		39DDE1BE26096B7200208D82 /* AssignmentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DDE1BD26096B7200208D82 /* AssignmentStore.swift */; };
+		39DDE1C2260A5A0D00208D82 /* AssignmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DDE1C1260A5A0D00208D82 /* AssignmentCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		39DDE1B72609671F00208D82 /* Assignments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignments.swift; sourceTree = "<group>"; };
 		39DDE1BA26096AA700208D82 /* AssignmentPriority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentPriority.swift; sourceTree = "<group>"; };
 		39DDE1BD26096B7200208D82 /* AssignmentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentStore.swift; sourceTree = "<group>"; };
+		39DDE1C1260A5A0D00208D82 /* AssignmentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				39DDE1A52608E8DE00208D82 /* CourseDetailView.swift */,
 				39DDE1A82608E9D100208D82 /* AddCourse.swift */,
 				39DDE1AE2608F04500208D82 /* CourseCell.swift */,
+				39DDE1C1260A5A0D00208D82 /* AssignmentCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 				39DDE1AC2608EB4C00208D82 /* Course.swift in Sources */,
 				39DDE1BE26096B7200208D82 /* AssignmentStore.swift in Sources */,
 				39DDE1A62608E8DE00208D82 /* CourseDetailView.swift in Sources */,
+				39DDE1C2260A5A0D00208D82 /* AssignmentCell.swift in Sources */,
 				39DDE1BB26096AA700208D82 /* AssignmentPriority.swift in Sources */,
 				397ADF8E26012E80001ADBB1 /* SchoolPlannerApp.swift in Sources */,
 			);

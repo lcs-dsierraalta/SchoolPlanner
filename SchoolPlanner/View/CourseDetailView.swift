@@ -13,14 +13,6 @@ struct CourseDetailView: View {
     
     var body: some View {
         List(storeA.assignments) { assignment in
-            HStack {
-                Image(systemName: assignment.completed ? "checkmark.circle.fill" : "circle")
-                    .onTapGesture {
-                        assignment.completed.toggle()
-                    }
-                
-                Text(assignment.assignmentName)
-            }
         }
     }
 }
