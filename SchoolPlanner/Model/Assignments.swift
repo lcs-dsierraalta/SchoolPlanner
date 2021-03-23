@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Assignment: Identifiable {
+struct Assignment: Identifiable {
     
     var id = UUID()
     var assignmentName: String
@@ -16,8 +16,10 @@ class Assignment: Identifiable {
     var priority: AssignmentPriority
     var dueDate = Date()
     
-    init(<#parameters#>) {
-        <#statements#>
-    }
-    
 }
+
+let testData = [
+    Assignment(assignmentName: "Problem Set", description: "Problem solving using what we know about forces", completed: true, priority: .high),
+    Assignment(assignmentName: "Energy Homework", description: "Page 4 of the Energy note package", completed: false, priority: .medium),
+    Assignment(assignmentName: "Notes", description: "Complete notes on the Energy note package", completed: false, priority: .low)
+]
