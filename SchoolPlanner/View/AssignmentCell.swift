@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AssignmentCell: View {
     
-    var assignment: Assignment
+   @ObservedObject var assignment: Assignment
     
     var body: some View {
         HStack {

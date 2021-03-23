@@ -12,8 +12,8 @@ class Assignment: Identifiable, ObservableObject {
     var id = UUID()
     var assignmentName: String
     var description: String
-    var completed: Bool
-    @Published var priority: AssignmentPriority
+    @Published var completed: Bool
+    var priority: AssignmentPriority
     var dueDate = Date()
     
     internal init(id: UUID = UUID(), assignmentName: String, description: String, completed: Bool, priority: AssignmentPriority, dueDate: Date = Date()) {

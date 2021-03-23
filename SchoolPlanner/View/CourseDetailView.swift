@@ -13,6 +13,7 @@ struct CourseDetailView: View {
     
     var body: some View {
         List(storeA.assignments) { assignment in
+            AssignmentCell(assignment: assignment)
         }
     }
 }
